@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site Pessoal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portifolio.html">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="welcome-message" class="hidden">
+        <h2>Bem-vindo!</h2>
+        <p>Obrigado por visitar meu site. Explore e conheça mais sobre mim.</p>
+      </div>
+      <h1>Bem-vindo ao Meu Site Pessoal!</h1>
+      <p>
+        Olá! Sou João Paulo Franchini de Freitas, e este é o meu espaço na web
+        onde compartilho minhas experiências, projetos e interesses. Aqui você
+        encontrará informações sobre minha formação acadêmica, meu trabalho como
+        programador e alguns dos meus projetos mais recentes.
+      </p>
+      <p>
+        Explore as seções para saber mais sobre mim e meu trabalho. Se você
+        tiver alguma dúvida ou quiser entrar em contato, não hesite em me enviar
+        uma mensagem através da página de contato. Espero que você aproveite sua
+        visita!
+      </p>
+    </main>
+    <footer>
+      <p>&copy; 2024 João Paulo Franchini de Freitas</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const welcomeMessage = document.getElementById("welcome-message");
+        welcomeMessage.classList.remove("hidden");
+        setTimeout(() => {
+          welcomeMessage.style.opacity = "0";
+          setTimeout(() => {
+            welcomeMessage.classList.add("hidden");
+          }, 1000);
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
